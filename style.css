@@ -1,0 +1,86 @@
+header{
+    font-family:"Press Start 2P", system-ui;
+   text-align: center;
+   font-size: 20px;
+   color:rgb(255, 255, 255);
+}
+main{
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+}
+
+body{
+    background-image: url("images/blue.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.calculator{
+    background-color:#58add5;
+    border-radius: 15px;
+    box-shadow: 0 0 30px #076996;
+    padding: 10px;
+    margin: 0;
+    width: 500px;
+    text-align: center;
+    align-items: center;
+    position:relative;
+}
+
+.sticker{
+    position:absolute;
+    width:150px;
+    right:-60px;
+    top:-50px;
+}
+
+#answer{
+    width:450px;
+    height:100px;
+    font-size: 20px;
+}
+
+.display{
+    padding:10px;
+}
+ .display input{
+    background-color:#d4f1ff;
+    border:none;
+ }
+
+.buttons{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:20px;
+    padding:20px;
+}
+
+.buttons button{
+    height: 78px;
+    width:78px;
+    background-color:rgb(173, 223, 255);
+    border:none;
+    border-radius: 10px;
+    color: #478baa;
+    font-size: 20px;
+    text-align: center;
+}
+
+#equal-sign{
+    width:200px;
+}
+
+#theme{
+    font-family:"Press Start 2P", system-ui;
+    font-size: 15px;
+    text-align: center;
+    background-color:#58add5;
+    border:none;
+    border-radius: 10px;
+    color:rgb(255, 255, 255);
+    position:fixed;
+    right:60px;
+    top:50px;
+}

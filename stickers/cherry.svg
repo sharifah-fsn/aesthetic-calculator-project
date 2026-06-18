@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="500" width="500">
+
+    <g id="stem">
+        <path d="M 130 260 q 62 -125 150 -185 " stroke="#56ab91" stroke-width="30" fill="none"/>
+        <path d="M 360 260 q -62 -125 -150 -185 " stroke="#56ab91" stroke-width="30" fill="none"/>
+        <line x1="150" y1="83" x2="300" y2="83" style="stroke:#56ab91;stroke-width:40" />
+    </g>
+
+    <g id="cherries">
+        <circle r="100" cx="145" cy="350" fill="#ff4d4d" />
+        <circle r="100" cx="355" cy="350" fill="#ff4d4d" />
+    </g>
+
+    <g id="leaves">
+        <path d="M 250 75 q 125 -50 125 125 q -125 50 -125 -135" fill="#56ab91" stroke="#56ab91" stroke-width="10"/>
+    </g>
+</svg>

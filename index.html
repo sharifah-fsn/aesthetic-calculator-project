@@ -5,40 +5,51 @@
         <meta name="viewport" content="width=device-width , initial-scale=1.0">
         <title>Aesthetic Calculator</title>
         <link rel="stylesheet" href="style.css">
-    </head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Press+Start+2P&display=swap" rel="stylesheet">
     <body>
-        <div class="calculator">
+        <header>
+            <h1>My Aesthetic Calculator</h1>
+        </header>
+        
+        <main>
+            <div class="calculator">
             
-            <div class="display">
-                <input type="text" id="answer" readonly>
+                <div class="display">
+                    <img src="stickers/shell.svg" alt="Shell sticker" class="sticker">
+                    <input type="text" id="answer" readonly>
+                </div>
+
+                <div class="buttons">
+
+                    <button>AC</button>
+                    <button>DEL</button>
+                    <button>%</button>
+                    <button>÷</button>
+                
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>×</button>
+                
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>-</button>
+                
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>+</button>
+                    
+                    <button>0</button>
+                    <button>.</button>
+                    <button id="equal-sign">=</button>
+                </div>
             </div>
-
-            <div class="buttons">
-
-                <button>AC</button>
-                <button>DEL</button>
-                <button>%</button>
-                <button>÷</button>
-
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>×</button>
-
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
-
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-
-                <button>0</button>
-                <button>.</button>
-                <button>=</button>
-            </div>
-        </div>
+            <button class="buttons" id="theme">Theme</button>
+        </main>
+        
     </body>
 </html>
