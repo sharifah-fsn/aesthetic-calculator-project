@@ -1,6 +1,6 @@
 const buttons=document.querySelectorAll("button");
 const display=document.querySelector("#answer");
- let input="";
+let input="";
 
 buttons.forEach(button => {
     button.addEventListener("click", () => {
@@ -79,4 +79,71 @@ function calculate(){
 
     display.value=total;
     input=total.toString();
+}
+
+const theme=document.querySelector("#theme");
+
+const themes = {
+
+    blue:{
+        "--bgimg":"url('images/blue.png')",
+        "--calbg":"#58add5",
+        "--calshdws":"0 0 30px #076996",
+        "--displaybg":"#d4f1ff",
+        "--bttnbg":"rgb(173, 223, 255)",
+        "--bttnfnt":"#478baa",
+    },
+
+    yellow:{
+        "--bgimg":"url('images/yellow.png')",
+        "--calbg":"#f1f877",
+        "--calshdws":"0 0 30px #cfd604",
+        "--displaybg":"#f9ffcf",
+        "--bttnbg":"rgb(253, 255, 186)",
+        "--bttnfnt":"#9daa47",
+    },
+
+    green: {
+        "--bgimg":"url('images/green.png')",
+        "--calbg":"#3c9d66",
+        "--calshdws":"0 0 30px #1c5234",
+        "--displaybg":"#c3ffdb",
+        "--bttnbg":"rgb(186, 255, 215)",
+        "--bttnfnt":"#21632f",
+    },
+
+    red:{
+        "--bgimg":"url('images/red.png')",
+        "--calbg":" #ef476f",
+        "--calshdws":"0 0 30px #762135 ",
+        "--displaybg":"#ffd4ef",
+        "--bttnbg":"rgb(255, 186, 228)",
+        "--bttnfnt":"#86273f",
+    },
+}
+
+theme.addEventListener("change", () => {
+        newtheme=theme.value;
+        changeTheme(newtheme);
+    })
+
+function changeTheme(newtheme){
+     const root = document.documentElement;
+
+    const selected = themes[newtheme];
+
+    for (let theme in selected) {
+        root.style.setProperty(theme, selected[theme]);
+    }
+
+    const stickers = {
+    blue: "stickers/shell.svg",
+    green: "stickers/clover.svg",
+    yellow: "stickers/star.svg",
+    red: "stickers/cherry.svg"
+    };
+
+    const sticker = document.querySelector(".sticker");
+
+    sticker.src = stickers[newtheme];
 }
